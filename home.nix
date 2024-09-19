@@ -48,11 +48,6 @@
 	extraConfig.init.defaultBranch = "main";
   };
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
-
   programs.tmux = {
     enable = true;
     baseIndex = 1;
