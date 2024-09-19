@@ -8,7 +8,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/New_York";
@@ -29,10 +29,10 @@
 
   services.xserver = {
     enable = true;
-    
+
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
-    
+
     xkb = {
       layout = "us";
       variant = "";
@@ -40,7 +40,7 @@
 
     excludePackages = with pkgs; [ xterm ];
   };
-  
+
   environment.gnome.excludePackages = with pkgs; [
     epiphany
     geary
@@ -80,8 +80,11 @@
   users.users.bill = {
     isNormalUser = true;
     description = "William Zheng";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = [ ];
     shell = pkgs.zsh;
   };
 
@@ -95,8 +98,11 @@
   ];
 
   programs.zsh.enable = true;
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # List services that you want to enable:
 
