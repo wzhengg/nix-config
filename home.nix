@@ -29,6 +29,9 @@
     lua-language-server
     stylua
 
+	nixd
+	nixfmt-rfc-style
+
     nodejs_22
 
     shfmt
