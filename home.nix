@@ -34,6 +34,9 @@
 
     nodejs_22
 
+    typescript
+    typescript-language-server
+
     shfmt
   ];
 
