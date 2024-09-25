@@ -33,6 +33,7 @@
     nixfmt-rfc-style
 
     nodejs_22
+    nodePackages.prettier
 
     typescript
     typescript-language-server
