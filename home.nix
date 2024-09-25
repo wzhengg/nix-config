@@ -20,7 +20,7 @@
     gnutar
     ripgrep
 
-    go
+    go_1_23
     gopls
     gotools
     gofumpt
