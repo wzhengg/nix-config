@@ -77,6 +77,11 @@
     #media-session.enable = true;
   };
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
   users.users.bill = {
     isNormalUser = true;
     description = "William Zheng";
