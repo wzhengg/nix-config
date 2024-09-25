@@ -99,6 +99,11 @@
 
   programs.zsh.enable = true;
 
+  services.postgresql = {
+    enable = true;
+    package = pkgs.postgresql;
+  };
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
