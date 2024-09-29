@@ -20,6 +20,8 @@
     gnutar
     ripgrep
 
+    go-migrate
+
     go_1_23
     gopls
     gotools
