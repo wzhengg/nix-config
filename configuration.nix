@@ -96,10 +96,11 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    neovim
-    git
+    discord
     firefox-devedition
     foot
+    git
+    neovim
   ];
 
   programs.zsh.enable = true;
